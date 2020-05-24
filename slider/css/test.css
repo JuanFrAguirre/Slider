@@ -1,0 +1,246 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 2;
+  background: #020024;
+  background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(35%, #090979), to(#286b79));
+  background: linear-gradient(90deg, #020024 0%, #090979 35%, #286b79 100%);
+  color: #ddd;
+}
+
+/** Globales **/
+.contenedor {
+  max-width: 120rem;
+  width: 95%;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .contenedor {
+    width: 90%;
+  }
+}
+
+h1 {
+  font-size: 4.8rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3.2rem;
+}
+
+h4 {
+  font-size: 2.8rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+/** Utilidades **/
+.centrar-texto {
+  text-align: center;
+}
+
+.flex-c {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-sb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-fs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.flex-fe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.flex-sa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.flex-se {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.main {
+  min-height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .header h1 {
+  margin: 0;
+  letter-spacing: .5rem;
+  display: block;
+}
+
+.main .slider {
+  height: 50rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.main .slider .diapositiva {
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  background-position: top center;
+  background-size: cover;
+  border: 10px solid #2a78a8;
+  border-radius: 5px;
+}
+
+.main .slider .oculta {
+  display: none;
+}
+
+.main .slider .diap1 {
+  background-image: url(../img/glasses-2.jpeg);
+  background-position: center center;
+}
+
+.main .slider .diap2 {
+  background-image: url(../img/glasses.jpeg);
+}
+
+.main .slider .diap3 {
+  background-image: url(../img/lente-fog.jpg);
+}
+
+.main .slider .diap4 {
+  background-image: url(../img/model-1.jpeg);
+  background-position: center center;
+}
+
+.main .slider .diap5 {
+  background-image: url(../img/sunglasses-dusk.jpeg);
+  background-position: center center;
+}
+
+.main .botones {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 1rem;
+}
+
+.main .botones .btn {
+  padding: 1rem 3rem;
+  margin: 0 .5rem;
+  font-size: 2rem;
+  border: none;
+  font-weight: 300;
+  color: #fff;
+  background-color: #072538;
+  display: block;
+  border-radius: 10px 10px 0 0;
+}
+
+.main .botones .btn:hover {
+  background-color: #2a78a8;
+  color: #e1e1e1;
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.main .botones .seleccionado {
+  background-color: #2a78a8;
+  color: #e1e1e1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.main .descripcion-slider {
+  color: #fff;
+  text-align: justify;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-column-gap: 5rem;
+          column-gap: 5rem;
+  padding: 2rem 10rem;
+}
+/*# sourceMappingURL=test.css.map */

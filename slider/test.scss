@@ -1,0 +1,215 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 2;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(40, 107, 121, 1) 100%);
+  color: #ddd;
+}
+
+/** Globales **/
+
+.contenedor {
+  max-width: 120rem;
+  width: 95%;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    width: 90%;
+  }
+}
+
+h1 {
+  font-size: 4.8rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3.2rem;
+}
+
+h4 {
+  font-size: 2.8rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+/** Utilidades **/
+
+.centrar-texto {
+  text-align: center;
+}
+
+.flex-c {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-sb {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-fs {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.flex-fe {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.flex-sa {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex-se {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+// Main
+
+.main {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .header {
+    h1 {
+      margin: 0;
+      letter-spacing: .5rem;
+
+      display: block;
+    }
+  }
+
+  .slider {
+    height: 50rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+
+    .diapositiva {
+      width: 80%;
+      height: 100%;
+      position: absolute;
+      background-position: top center;
+      background-size: cover;
+      border: 10px solid rgb(42, 120, 168);
+      border-radius: 5px;
+    }
+
+    .oculta {
+      display: none;
+    }
+
+    .diap1 {
+      background-image: url(../img/glasses-2.jpeg);
+      background-position: center center;
+    }
+
+    .diap2 {
+      background-image: url(../img/glasses.jpeg);
+    }
+
+    .diap3 {
+      background-image: url(../img/lente-fog.jpg);
+    }
+
+    .diap4 {
+      background-image: url(../img/model-1.jpeg);
+      background-position: center center;
+    }
+
+    .diap5 {
+      background-image: url(../img/sunglasses-dusk.jpeg);
+      background-position: center center;
+    }
+
+  }
+
+  .botones {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+
+    .btn {
+      padding: 1rem 3rem;
+      margin: 0 .5rem;
+      font-size: 2rem;
+      border: none;
+      font-weight: 300;
+      color: #fff;
+      background-color: rgb(7, 37, 56);
+      display: block;
+      border-radius: 10px 10px 0 0;
+
+      &:hover {
+        background-color: rgb(42, 120, 168);
+        color: #e1e1e1;
+        cursor: pointer;
+        transform: scale(1.1);
+      }
+    }
+
+    .seleccionado {
+      background-color: rgb(42, 120, 168);
+      color: #e1e1e1;
+      transform: scale(1.1);
+
+    }
+  }
+
+
+  .descripcion-slider {
+    color: #fff;
+    text-align: justify;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5rem;
+    padding: 2rem 10rem;
+  }
+}
+
+
+
+//---------------------------------------------
+//---------------------------------------------
+//---------------------------------------------
+//---------------------------------------------
+//---------------------------------------------
